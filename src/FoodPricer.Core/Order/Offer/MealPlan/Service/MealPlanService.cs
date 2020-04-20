@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using FoodPricer.Core.Order.Offer.MealPlan;
 
 namespace FoodPricer.Core.Order.MealPlan.Service
 {
@@ -15,8 +16,10 @@ namespace FoodPricer.Core.Order.MealPlan.Service
         {
             return new List<IMealPlan>()
             {
-                new StandardMealPlan(),
-                new MaxMealPlan()
+                new PlateStandardMealPlan(),
+                new PlateMaxMealPlan(),
+                new SandwichStandardMealPlan(),
+                new SandwichMaxMealPlan()
             };
         }
     }
