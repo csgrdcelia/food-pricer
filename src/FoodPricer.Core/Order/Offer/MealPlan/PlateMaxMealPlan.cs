@@ -11,7 +11,7 @@ namespace FoodPricer.Core.Order.Offer.MealPlan
         
         public bool IsEligible(Order order)
         {
-            return order.Meal is Plate && order.Beverage is LargeBeverage && order.Dessert is NormalDessert;
+            return order.Meal is Plate && order.Beverage is LargeBeverage && order.Dessert is SpecialDessert;
         }
     }
 }

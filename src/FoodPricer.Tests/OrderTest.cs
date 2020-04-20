@@ -26,21 +26,21 @@ namespace FoodPricer.Tests
         [Fact]
         public void Order_WithPlateMaxMealPlan_AndWithoutCoffee_ShouldCost21()
         {
-            Order order = new Order(new Plate(), new LargeBeverage(), new NormalDessert(), false);
+            Order order = new Order(new Plate(), new LargeBeverage(), new SpecialDessert(), false);
             Assert.Equal(21, order.GetPrice());
         }
         
         [Fact]
         public void Order_WithPlateMaxMealPlan_AndCoffee_ShouldCost22()
         {
-            Order order = new Order(new Plate(), new LargeBeverage(), new NormalDessert(), true);
+            Order order = new Order(new Plate(), new LargeBeverage(), new SpecialDessert(), true);
             Assert.Equal(22, order.GetPrice());
         }
         
         [Fact]
         public void Order_WithSandwichMaxMealPlan_AndCoffee_ShouldCost17()
         {
-            Order order = new Order(new Plate(), new LargeBeverage(), new NormalDessert(), true);
+            Order order = new Order(new Plate(), new LargeBeverage(), new SpecialDessert(), true);
             Assert.Equal(22, order.GetPrice());
         }
         
